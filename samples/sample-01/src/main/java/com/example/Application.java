@@ -16,10 +16,10 @@
 
 package com.example;
 
+import com.common.Foo2;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -36,14 +36,11 @@ import org.springframework.kafka.support.converter.JsonMessageConverter;
 import org.springframework.kafka.support.converter.RecordMessageConverter;
 import org.springframework.util.backoff.FixedBackOff;
 
-import com.common.Foo2;
-
 /**
  * Sample shows use of a dead letter topic.
  *
  * @author Gary Russell
  * @since 2.2.1
- *
  */
 @SpringBootApplication
 public class Application {
